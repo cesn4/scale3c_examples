@@ -1,0 +1,73 @@
+<svg id="view" width="900" height="600" style="transform:scale(1.3)rotate(-1deg);" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <defs>
+            <linearGradient id="dark_violet" x1="54%" y1="0%" x2="65%" y2="0%" gradientTransform="rotate(71)" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#270C66"></stop>
+                <stop offset="1" stop-color="#140635"></stop>
+            </linearGradient>
+            <linearGradient id="purple" x1="30%" y1="0%" x2="90%" y2="0%" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FC7A4B"></stop>
+                <stop offset="0.4899" stop-color="#CF0054"></stop>
+                <stop offset="1" stop-color="#790054"></stop>
+            </linearGradient>
+            <linearGradient id="purple2" x1="7%" y1="0%" x2="30%" y2="0%" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FC7A4B"></stop>
+                <stop offset="0.4899" stop-color="#CF0054"></stop>
+                <stop offset="1" stop-color="#790054"></stop>
+            </linearGradient>
+            <linearGradient id="overlay" x1="40%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFFFC2"></stop>
+                <stop offset="1" stop-color="#142C6F"></stop>
+            </linearGradient>
+        </defs>
+    <clipPath id="wave2clip"><path id="wave2clippath" d="M170 600C170 600 200 590 270 510s100 -112 260 -110s170 -170 270 -180L900 600L0 600Z">
+      <animate attributeName="d" dur="12000ms" repeatCount="indefinite" values="M170 600C170 600 200 590 270 510s100 -112 260 -110s170 -170 270 -180L900 600L0 600Z;M100 600C100 600 100 500 230 480s180 20 230 -130s200 0 340 -130L900 600L0 600Z;M170 600C170 600 200 590 270 510s100 -112 260 -110s170 -170 270 -180L900 600L0 600Z"></animate>
+    </path></clipPath>
+    <clipPath id="wave3clip"><path id="wave3clippath" d="M20 600C20 600 64 582 100 540s60 -40 120 -40s90 -30 110 -30L900 600L0 600Z">
+      <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M20 600C20 600 64 582 100 540s60 -40 120 -40s90 -30 110 -30L900 600L0 600Z;M0 600C0 600 20 560 80 540s100 40 180 -40s90 -20 300 -20L900 600L0 600Z;M20 600C20 600 64 582 100 540s60 -40 120 -40s90 -30 110 -30L900 600L0 600Z"></animate>
+    </path></clipPath>
+    <path fill="url(#dark_violet)" style="transform:rotate(-7deg);transform-origin:center;" opacity="1" id="wave1" d="M0 550C0 550 100 580 170 510s110 -90 210 -80s120 -10 160 -70s90 -120 250 -100L900 600L0 600Z">
+      <animate attributeName="d" dur="11000ms" repeatCount="indefinite" values="M0 550C0 550 100 580 170 510s110 -90 210 -80s120 -10 160 -70s90 -120 250 -100L900 600L0 600Z;M0 520C0 520 70 450 170 490s150 -20 190 -80s120 -70 190 -50s180 -10 250 -100L900 600L0 600Z;M0 550C0 550 100 580 170 510s110 -90 210 -80s120 -10 160 -70s90 -120 250 -100L900 600L0 600Z"></animate>
+    </path>
+    <path fill="url(#purple2)" opacity="1" id="wave3" d="M20 600C20 600 64 582 100 540s60 -40 120 -40s90 -30 110 -30L900 600L0 600Z">
+      <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M20 600C20 600 64 582 100 540s60 -40 120 -40s90 -30 110 -30L900 600L0 600Z;M0 600C0 600 20 560 80 540s100 40 180 -40s90 -20 300 -20L900 600L0 600Z;M20 600C20 600 64 582 100 540s60 -40 120 -40s90 -30 110 -30L900 600L0 600Z"></animate>
+    </path>
+    <path fill="transparent" opacity="1" stroke="white" stroke-width="1" stroke-opacity="0.3" id="linewave5" d="M150 600C180 580 190 570 210 540s20 -50 50 -60s550 -280 550 -280L900 600L0 600Z" clip-path="url(#wave3clip)">
+      <animate attributeName="d" dur="14000ms" repeatCount="indefinite" values="M150 600C180 580 190 570 210 540s20 -50 50 -60s550 -280 550 -280L900 600L0 600Z;M100 600C130 580 115 550 110 540s30 -60 50 -60s550 -280 550 -280L900 600L0 600Z;M150 600C180 580 190 570 210 540s20 -50 50 -60s550 -280 550 -280L900 600L0 600Z"></animate>
+    </path>
+    <path fill="url(#overlay)" opacity="1" id="stripewave4" d="M40 600C60 600 100 560 120 540C120 540 180 490 270 480s-40 -10 -90 70s-100 30 -140 70L900 600L0 600Z" clip-path="url(#wave3clip)" style="mix-blend-mode:overlay">
+      <animate attributeName="d" dur="11000ms" repeatCount="indefinite" values="M40 600C60 600 100 560 120 540C120 540 180 490 270 480s-40 -10 -90 70s-100 30 -140 70L900 600L0 600Z;M50 600C40 600 70 550 120 540C120 540 240 520 270 480s-10 50 -90 80s-90 20 -120 70L900 600L0 600Z;M40 600C60 600 100 560 120 540C120 540 180 490 270 480s-40 -10 -90 70s-100 30 -140 70L900 600L0 600Z"></animate>
+    </path>
+    <path fill="url(#purple)" opacity="1" id="wave2" d="M170 600C170 600 200 590 270 510s100 -112 260 -110s170 -170 270 -180L900 600L0 600Z">
+      <animate attributeName="d" dur="12000ms" repeatCount="indefinite" values="M170 600C170 600 200 590 270 510s100 -112 260 -110s170 -170 270 -180L900 600L0 600Z;M100 600C100 600 100 500 230 480s180 20 230 -130s200 0 340 -130L900 600L0 600Z;M170 600C170 600 200 590 270 510s100 -112 260 -110s170 -170 270 -180L900 600L0 600Z"></animate>
+    </path>
+    <path fill="transparent" opacity="1" stroke="white" stroke-width="1" stroke-opacity="0.3" id="linewave" d="M300 600C300 600 290 540 410 510s290 -110 330 -300s130 0 130 0L900 600L0 600Z" clip-path="url(#wave2clip)">
+      <animate attributeName="d" dur="14000ms" repeatCount="indefinite" values="M300 600C300 600 290 540 410 510s290 -110 330 -300s130 0 130 0L900 600L0 600Z;M250 600C250 600 360 580 410 510s150 -250 330 -300s130 0 130 0L900 600L0 600Z;M300 600C300 600 290 540 410 510s290 -110 330 -300s130 0 130 0L900 600L0 600Z"></animate>
+    </path>
+    <path fill="transparent" opacity="1" stroke="white" stroke-width="1" stroke-opacity="0.3" id="linewave2" d="M240 600C240 600 240 540 350 490s40 -15 110 -50s60 -80 160 -170s190 -60 190 -60L900 600L0 600Z" clip-path="url(#wave2clip)">
+      <animate attributeName="d" dur="14000ms" repeatCount="indefinite" values="M240 600C240 600 240 540 350 490s40 -15 110 -50s60 -80 160 -170s190 -60 190 -60L900 600L0 600Z;M150 600C150 600 200 600 260 560s70 -50 100 -90s80 -150 160 -180s290 -80 290 -80L900 600L0 600Z;M240 600C240 600 240 540 350 490s40 -15 110 -50s60 -80 160 -170s190 -60 190 -60L900 600L0 600Z"></animate>
+    </path>
+    <path fill="transparent" opacity="1" stroke="white" stroke-width="1" stroke-opacity="0.3" id="linewave3" d="M370 600C370 600 350 550 470 510s230 -50 300 -170s40 -70 50 -70L900 600L0 600Z" clip-path="url(#wave2clip)">
+      <animate attributeName="d" dur="14000ms" repeatCount="indefinite" values="M370 600C370 600 350 550 470 510s230 -50 300 -170s40 -70 50 -70L900 600L0 600Z;M350 600C350 600 440 570 490 480s140 -160 250 -170s120 -70 60 -100L900 600L0 600Z;M370 600C370 600 350 550 470 510s230 -50 300 -170s40 -70 50 -70L900 600L0 600Z"></animate>
+    </path>
+    <path fill="transparent" opacity="1" stroke="white" stroke-width="1" stroke-opacity="0.3" id="linewave4" d="M420 600C420 580 420 530 610 510s180 -20 250 -100L900 600L0 600Z" clip-path="url(#wave2clip)">
+      <animate attributeName="d" dur="14000ms" repeatCount="indefinite" values="M420 600C420 580 420 530 610 510s180 -20 250 -100L900 600L0 600Z;M390 600C390 600 500 570 570 480s200 -120 280 -100L900 600L0 600Z;M420 600C420 580 420 530 610 510s180 -20 250 -100L900 600L0 600Z"></animate>
+    </path>
+    <path fill="url(#overlay)" opacity="1" id="stripewave" d="M320 600C330 550 390 515 510 485s200 -100 230 -200s40 -100 80 -120s50 90 0 80s-50 170 -250 230s-210 70 -210 125L900 600L0 600Z" clip-path="url(#wave2clip)" style="mix-blend-mode:overlay">
+      <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="M320 600C330 550 390 515 510 485s200 -100 230 -200s40 -100 80 -120s50 90 0 80s-50 170 -250 230s-210 70 -210 125L900 600L0 600Z;M280 600C390 570 430 595 510 485s100 -180 230 -200s110 0 80 -20s200 80 20 80s-180 20 -250 100s-80 80 -200 155L900 600L0 600Z;M320 600C330 550 390 515 510 485s200 -100 230 -200s40 -100 80 -120s50 90 0 80s-50 170 -250 230s-210 70 -210 125L900 600L0 600Z"></animate>
+    </path>
+    <path fill="url(#overlay)" opacity="1" id="stripewave2" d="M460 610C460 580 490 530 640 520s190 -20 220 -80C870 560 720 570 660 570s-170 15 -200 40L900 600L0 600Z" clip-path="url(#wave2clip)" style="mix-blend-mode:overlay">
+      <animate attributeName="d" dur="18000ms" repeatCount="indefinite" values="M460 610C460 580 490 530 640 520s190 -20 220 -80C870 560 720 570 660 570s-170 15 -200 40L900 600L0 600Z;M550 610C550 610 510 550 640 520s150 -20 240 -20C850 520 690 500 660 560s-90 40 -90 70L900 600L0 600Z;M460 610C460 580 490 530 640 520s190 -20 220 -80C870 560 720 570 660 570s-170 15 -200 40L900 600L0 600Z"></animate>
+    </path>
+    <path fill="url(#overlay)" opacity="1" id="stripewave3" d="M190 600C190 600 340 410 530 390C530 390 490 400 460 440s-70 50 -110 60s-115 50 -120 100L900 600L0 600Z" clip-path="url(#wave2clip)" style="mix-blend-mode:overlay">
+      <animate attributeName="d" dur="6000ms" repeatCount="indefinite" values="M190 600C190 600 340 410 530 390C530 390 490 400 460 440s-70 50 -110 60s-115 50 -120 100L900 600L0 600Z;M190 600C190 600 380 550 460 390C460 390 460 445 440 465s-50 40 -80 60s-80 40 -120 100L900 600L0 600Z;M190 600C190 600 340 410 530 390C530 390 490 400 460 440s-70 50 -110 60s-115 50 -120 100L900 600L0 600Z"></animate>
+    </path>
+    <path fill="white" opacity="0.15" id="stripewave5" d="M380 600C380 600 380 500 530 470s150 -60 160 -110s-10 -160 90 -160s80 105 80 120s-60 130 -280 170s-50 110 -50 110L900 600L0 600Z">
+      <animate attributeName="d" dur="6000ms" repeatCount="indefinite" values="M380 600C380 600 380 500 530 470s150 -60 160 -110s-10 -160 90 -160s80 105 80 120s-60 130 -280 170s-50 110 -50 110L900 600L0 600Z;M380 600C380 600 420 520 530 470s160 -30 160 -120s-10 -160 100 -150s90 105 70 140s-90 120 -280 170s-50 110 -50 80L900 600L0 600Z;M380 600C380 600 380 500 530 470s150 -60 160 -110s-10 -160 90 -160s80 105 80 120s-60 130 -280 170s-50 110 -50 110L900 600L0 600Z"></animate>
+    </path>
+    <path fill="white" opacity="0.15" id="stripewave6" d="M190 600C190 600 290 560 370 480s140 -90 160 -70s-20 50 -50 70s-200 50 -230 120L900 600L0 600Z">
+      <animate attributeName="d" dur="8500ms" repeatCount="indefinite" values="M190 600C190 600 290 560 370 480s140 -90 160 -70s-20 50 -50 70s-200 50 -230 120L900 600L0 600Z;M190 600C190 600 250 560 330 480s140 -90 140 -70s-20 50 -50 70s-200 50 -190 120L900 600L0 600Z;M190 600C190 600 290 560 370 480s140 -90 160 -70s-20 50 -50 70s-200 50 -230 120L900 600L0 600Z"></animate>
+    </path>
+    <path fill="white" opacity="0.15" id="stripewave7" d="M120 600C120 600 150 580 180 520s80 -80 100 -70s20 40 0 70s-60 40 -140 80L900 600L0 600Z">
+      <animate attributeName="d" dur="8000ms" repeatCount="indefinite" values="M120 600C120 600 150 580 180 520s80 -80 100 -70s20 40 0 70s-60 40 -140 80L900 600L0 600Z;M120 600C120 600 130 580 160 520s60 -75 80 -65s20 40 0 70s-60 40 -120 80L900 600L0 600Z;M120 600C120 600 150 580 180 520s80 -80 100 -70s20 40 0 70s-60 40 -140 80L900 600L0 600Z"></animate>
+    </path>
+</svg>

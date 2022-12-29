@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:provider/provider.dart';
 import 'package:scale3c_examples/features/dashboard/dashboard_page.dart';
+import 'package:scale3c_examples/state/theme_state.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,15 +11,18 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.cyan,
-      ),
-      home: const DashboardPage(),
+    return ChangeNotifierProvider(
+      create: (context) => ThemeState(),
+      child: Consumer<ThemeState>(builder: (context, state, _) {
+        return GetMaterialApp(
+          theme: state.theme,
+          darkTheme: state.darkTheme,
+          themeMode: state.themeMode,
+          home: const DashboardPage(),
+        );
+      }),
     );
   }
 }

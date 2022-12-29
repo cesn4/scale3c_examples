@@ -1,82 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:scale3c_examples/features/dashboard/widgets/dashboard_sidebar.dart';
+import 'package:scale3c_examples/widgets/base_mixin.dart';
 
-class DashboardPage extends StatelessWidget {
+class DashboardPage extends StatelessWidget with BaseMixin {
   const DashboardPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'UI Samples',
-        ),
-      ),
-      drawer: Drawer(
-        child: SafeArea(
-          child: Column(
-            children: const [
-              ListTile(
-                title: Text(
-                  'Loading indicators',
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  'Page transitions',
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  'View transitions',
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  'Animations',
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  'Rive animations',
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  'Side bars',
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  'Bottom navigation bars',
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  'Inputs',
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  'Buttons',
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  'Modals',
-                ),
-              ),
-              ListTile(
-                title: Text(
-                  'Graphs',
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-      body: Column(
-        children: const [],
-      ),
+      backgroundColor: colorScheme(context).background,
+      appBar: AppBar(),
+      drawer: const DashboardSidebar(),
     );
   }
 }
