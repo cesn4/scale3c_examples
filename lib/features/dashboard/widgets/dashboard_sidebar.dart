@@ -3,6 +3,7 @@ import 'package:get/route_manager.dart';
 import 'package:scale3c_examples/features/color_picker/color_picker_page.dart';
 import 'package:scale3c_examples/features/loading_indicators/loading_indicators_page.dart';
 import 'package:scale3c_examples/features/page_transitions/page_transitions_page.dart';
+import 'package:scale3c_examples/features/view_transitions/view_transitions_page.dart';
 
 class DashboardSidebar extends StatelessWidget {
   const DashboardSidebar({super.key});
@@ -33,11 +34,6 @@ class DashboardSidebar extends StatelessWidget {
                 'Loading indicators',
               ),
             ),
-            const ListTile(
-              title: Text(
-                'Refresh indicators',
-              ),
-            ),
             ListTile(
               onTap: () {
                 Get.to(
@@ -48,8 +44,13 @@ class DashboardSidebar extends StatelessWidget {
                 'Page transitions',
               ),
             ),
-            const ListTile(
-              title: Text(
+            ListTile(
+              onTap: () {
+                Get.to(
+                  const ViewTransitionPage(),
+                );
+              },
+              title: const Text(
                 'View transitions',
               ),
             ),
@@ -91,6 +92,11 @@ class DashboardSidebar extends StatelessWidget {
             const ListTile(
               title: Text(
                 'Graphs',
+              ),
+            ),
+            const ListTile(
+              title: Text(
+                'Refresh indicators',
               ),
             ),
           ],
