@@ -58,11 +58,6 @@ class DashboardSidebar extends StatelessWidget {
             ),
             const ListTile(
               title: Text(
-                'Animations',
-              ),
-            ),
-            const ListTile(
-              title: Text(
                 'Rive animations',
               ),
             ),

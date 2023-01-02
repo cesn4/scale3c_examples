@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           theme: state.theme,
           darkTheme: state.darkTheme,
-          themeMode: state.themeMode,
+          themeMode: ThemeMode.dark,
           home: const DashboardPage(),
         );
       }),
