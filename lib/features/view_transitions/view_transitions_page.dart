@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'views/animations_demo.dart';
+import 'views/basic_demo.dart';
 import 'views/concentric_demo.dart';
 
 class ViewTransitionPage extends StatefulWidget {
@@ -23,7 +25,7 @@ class _ViewTransitionPageState extends State<ViewTransitionPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Page Transitions',
+          'View Transitions',
         ),
       ),
       bottomNavigationBar: NavigationBar(
@@ -37,11 +39,15 @@ class _ViewTransitionPageState extends State<ViewTransitionPage> {
         destinations: const [
           NavigationDestination(
             icon: Icon(Icons.filter_tilt_shift),
-            label: 'concentric_transition: ^1.0.3',
+            label: 'basic',
           ),
           NavigationDestination(
             icon: Icon(Icons.filter_tilt_shift),
-            label: 'page_transition: ^2.0.9',
+            label: 'concentric_transition',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.filter_tilt_shift),
+            label: 'animations',
           ),
         ],
       ),
@@ -51,7 +57,9 @@ class _ViewTransitionPageState extends State<ViewTransitionPage> {
             child: PageView(
               controller: controller,
               children: const [
+                BasicDemo(),
                 ConcentricDemo(),
+                AnimationsDemo(),
               ],
             ),
           ),

@@ -13,6 +13,8 @@ class DashboardSidebar extends StatelessWidget {
     return Drawer(
       child: SafeArea(
         child: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ListTile(
               onTap: () {

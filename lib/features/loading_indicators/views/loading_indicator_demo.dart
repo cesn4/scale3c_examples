@@ -42,7 +42,7 @@ class LoadingIndicatorDemo extends StatelessWidget {
                     child: Text(
                       '${index + 1}',
                       style: const TextStyle(
-                        color: Colors.black,
+                        color: Colors.white,
                         fontSize: 14,
                       ),
                     ),
