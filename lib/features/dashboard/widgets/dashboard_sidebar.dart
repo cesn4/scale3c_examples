@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:scale3c_examples/features/color_picker/color_picker_page.dart';
+import 'package:scale3c_examples/features/drawers/drawers_page.dart';
 import 'package:scale3c_examples/features/loading_indicators/loading_indicators_page.dart';
 import 'package:scale3c_examples/features/page_transitions/page_transitions_page.dart';
 import 'package:scale3c_examples/features/rive_animations/rive_animations_page.dart';
@@ -67,9 +68,14 @@ class DashboardSidebar extends StatelessWidget {
                 'Rive animations',
               ),
             ),
-            const ListTile(
-              title: Text(
-                'Side bars',
+            ListTile(
+              onTap: () {
+                Get.to(
+                  const DrawersPage(),
+                );
+              },
+              title: const Text(
+                'Drawers',
               ),
             ),
             const ListTile(
