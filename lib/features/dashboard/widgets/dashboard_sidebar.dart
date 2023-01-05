@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:scale3c_examples/features/bottom_navigation/bottom_navigation_page.dart';
 import 'package:scale3c_examples/features/color_picker/color_picker_page.dart';
 import 'package:scale3c_examples/features/drawers/drawers_page.dart';
 import 'package:scale3c_examples/features/loading_indicators/loading_indicators_page.dart';
@@ -78,36 +79,41 @@ class DashboardSidebar extends StatelessWidget {
                 'Drawers',
               ),
             ),
-            const ListTile(
-              title: Text(
+            ListTile(
+              onTap: () {
+                Get.to(
+                  const BottomNavigationPage(),
+                );
+              },
+              title: const Text(
                 'Bottom navigation bars',
               ),
             ),
-            const ListTile(
-              title: Text(
-                'Inputs',
-              ),
-            ),
-            const ListTile(
-              title: Text(
-                'Buttons',
-              ),
-            ),
-            const ListTile(
-              title: Text(
-                'Modals',
-              ),
-            ),
-            const ListTile(
-              title: Text(
-                'Graphs',
-              ),
-            ),
-            const ListTile(
-              title: Text(
-                'Refresh indicators',
-              ),
-            ),
+            // const ListTile(
+            //   title: Text(
+            //     'Inputs',
+            //   ),
+            // ),
+            // const ListTile(
+            //   title: Text(
+            //     'Buttons',
+            //   ),
+            // ),
+            // const ListTile(
+            //   title: Text(
+            //     'Modals',
+            //   ),
+            // ),
+            // const ListTile(
+            //   title: Text(
+            //     'Graphs',
+            //   ),
+            // ),
+            // const ListTile(
+            //   title: Text(
+            //     'Refresh indicators',
+            //   ),
+            // ),
           ],
         ),
       ),
