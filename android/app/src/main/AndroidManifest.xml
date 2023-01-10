@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.scale3c_examples">
+    package="com.scale3c.templates">
    <application
         android:label="scale3c_examples"
         android:name="${applicationName}"

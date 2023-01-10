@@ -1,4 +1,4 @@
-package com.example.scale3c_examples
+package com.scale3c.templates
 
 import io.flutter.embedding.android.FlutterActivity
 
