@@ -38,9 +38,13 @@ class _DashboardPageState extends State<DashboardPage> with BaseMixin {
             backgroundColor: Colors.transparent,
             drawer: const DashboardSidebar(),
             appBar: AppBar(
-              foregroundColor: Colors.black,
+              foregroundColor: colorScheme(context).surface,
               backgroundColor: Colors.transparent,
               elevation: 0,
+              title: const Text(
+                'Scale3c',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
             ),
             floatingActionButton: Material(
               color: colorScheme(context).surface,
