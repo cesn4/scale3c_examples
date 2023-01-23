@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:scale3c_examples/features/bottom_navigation/bottom_navigation_page.dart';
 import 'package:scale3c_examples/features/calendar/calendar_page.dart';
+import 'package:scale3c_examples/features/charts/charts_page.dart';
 import 'package:scale3c_examples/features/chat/chat_page.dart';
 import 'package:scale3c_examples/features/color_picker/color_picker_page.dart';
 import 'package:scale3c_examples/features/drawers/drawers_page.dart';
@@ -109,6 +110,16 @@ class DashboardSidebar extends StatelessWidget {
               },
               title: const Text(
                 'Calendar',
+              ),
+            ),
+            ListTile(
+              onTap: () {
+                Get.to(
+                  const ChartsPage(),
+                );
+              },
+              title: const Text(
+                'Charts',
               ),
             ),
             // const ListTile(
