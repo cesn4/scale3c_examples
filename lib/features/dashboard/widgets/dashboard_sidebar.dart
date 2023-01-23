@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:scale3c_examples/features/bottom_navigation/bottom_navigation_page.dart';
+import 'package:scale3c_examples/features/chat/chat_page.dart';
 import 'package:scale3c_examples/features/color_picker/color_picker_page.dart';
 import 'package:scale3c_examples/features/drawers/drawers_page.dart';
 import 'package:scale3c_examples/features/loading_indicators/loading_indicators_page.dart';
@@ -89,11 +90,16 @@ class DashboardSidebar extends StatelessWidget {
                 'Bottom navigation bars',
               ),
             ),
-            // const ListTile(
-            //   title: Text(
-            //     'Inputs',
-            //   ),
-            // ),
+            ListTile(
+              onTap: () {
+                Get.to(
+                  const ChatPage(),
+                );
+              },
+              title: const Text(
+                'Chat',
+              ),
+            ),
             // const ListTile(
             //   title: Text(
             //     'Buttons',
