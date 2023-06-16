@@ -74,7 +74,7 @@ class _BarChartSample7State extends State<BarChartSample7> {
                   titlesData: FlTitlesData(
                     show: true,
                     leftTitles: AxisTitles(
-                      drawBehindEverything: true,
+                      // drawBehindEverything: true,
                       sideTitles: SideTitles(
                         showTitles: true,
                         reservedSize: 30,
@@ -105,14 +105,14 @@ class _BarChartSample7State extends State<BarChartSample7> {
                         },
                       ),
                     ),
-                    rightTitles: AxisTitles(),
-                    topTitles: AxisTitles(),
+                    rightTitles: const AxisTitles(),
+                    topTitles: const AxisTitles(),
                   ),
                   gridData: FlGridData(
                     show: true,
                     drawVerticalLine: false,
-                    getDrawingHorizontalLine: (value) => FlLine(
-                      color: const Color(0xFFececec),
+                    getDrawingHorizontalLine: (value) => const FlLine(
+                      color: Color(0xFFececec),
                       strokeWidth: 1,
                     ),
                   ),

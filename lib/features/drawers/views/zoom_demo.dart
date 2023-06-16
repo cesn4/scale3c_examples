@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_zoom_drawer/config.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 
 final ZoomDrawerController z = ZoomDrawerController();
@@ -209,7 +208,7 @@ class _TwoPanelsState extends State<TwoPanels> with TickerProviderStateMixin {
                   child: Center(
                     child: Text(
                       "Shop Here",
-                      style: Theme.of(context).textTheme.button,
+                      style: Theme.of(context).textTheme.labelLarge,
                     ),
                   ),
                 ),
